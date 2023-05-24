@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{ 
+    
+    min-height: 100vh;
+    overflow: auto;
+}
+
+html, body{
+    /*backdrop-filter: blur(3px);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    background-size: 100%;
+}
+
+#logo{
+    margin: 40px 0px 60px 0px;
+    object-fit: contain;
+    height: 200px;
+    width: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(35, 35, 35);        /* color of the tracking area */
+}
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(86, 85, 85);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.877);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.1px;
+    line-height: 15.6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.paragrafos{
+    margin: 50px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    width: 40%;
+    height: fit-content;
+    border: 2px solid aliceblue;
+}
+
+.titulos_sec{
+    border-top:2px solid aliceblue;
+    border-bottom:2px solid aliceblue;
+    
+    
+}
+
+table{
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    height: fit-content;
+    border: 2px solid aliceblue;
+}
+
+th{
+    width: 15svw;
+}
+
+.titulos_sec:hover{
+
+    background-color: rgba(0, 0, 0, 0.856);
+}
+td:hover{
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+table a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+tr, th, td{
+    padding: 20px;
+    text-align: center;
+}
+
+
+img{
+    object-fit: cover;
+    height: 25vh;
+    width: 15vw;
+    border-radius: 27%;
+    min-height: 250px;
+    min-width: 200px;
+
+}
+
+figure{
+    margin: 30px;
+    margin-top: 60px;
+}
+
+.imagens{
+    width: 70%;
+    margin: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    border-radius: 40px;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    height: fit-content;
+    border: 2px solid aliceblue;
+}
+
+
+p{
+    padding: 10px;
+}
+.teste:hover p{
+    background-color: rgba(128, 128, 128, 0.526);
+    border-radius: 10px;
+}
+
+.teste:hover div{
+    border-radius: 10px;
+    background-color: aqua;
+    z-index: 2;
+}
+
+
+.lista{
+    width: 30%;
+    margin: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    border-radius: 40px;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    height: fit-content;
+    border: 2px solid aliceblue;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.lista img{
+    margin-bottom: 80px;
+}
+
+#prin{
+    font-size: 30px;
+    height: 40px;
+    margin: 30px;
+    border-bottom: 3px solid aqua;  
+    border-radius: 10%;
+}
+
+.title{
+    font-size: 25px;
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    display: grid;
+    color: aliceblue;
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+
+ul{
+    justify-content: center;
+    display: flex;
+}   
+
+
+li{
+    padding: 15px;
+    display: flex;
+}
+
+footer{
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.877);
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
