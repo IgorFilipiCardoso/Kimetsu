@@ -1,21 +1,7 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
 
- body
- {
-   /* make it look decent enough */
- }
- 
  #menuToggle
  {
+  width: fit-content;
    display: block;
    position: relative;
    top: 50px;
@@ -30,7 +16,6 @@
  #menuToggle a
  {
    text-decoration: none;
-   /*color: #232323;*/
    color: rgb(247, 247, 247);
    
    transition: color 0.3s ease;
@@ -61,15 +46,12 @@
    
    cursor: pointer;
    
-   opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
+   opacity: 0;
+   z-index: 2;
    
    -webkit-touch-callout: none;
  }
  
- /*
-  * Just a quick hamburger
-  */
  #menuToggle span
  {
    display: block;
@@ -100,10 +82,6 @@
    transform-origin: 0% 100%;
  }
  
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
  #menuToggle input:checked ~ span
  {
    opacity: 1;
@@ -111,27 +89,17 @@
    background: rgb(189, 177, 177);
  }
  
- /*
-  * But let's hide the middle one.
-  */
  #menuToggle input:checked ~ span:nth-last-child(3)
  {
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
  }
  
- /*
-  * Ohyeah and the last one should go the other direction
-  */
  #menuToggle input:checked ~ span:nth-last-child(2)
  {
    transform: rotate(-45deg) translate(0, -1px);
  }
  
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
  #menu
  {
    position: absolute;
@@ -143,12 +111,11 @@
    padding-top: 125px;
    align-items: center;
    
-   border-radius: 8px
+   border-radius: 8px;
    
 
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
    
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
@@ -165,9 +132,6 @@
    font-size: 22px;
  }
  
- /*
-  * And let's slide it in from the left
-  */
  #menuToggle input:checked ~ ul
  {
    transform: none;
