@@ -6,7 +6,6 @@
 }
 
 html, body{ 
-    
     min-height: 100vh;
     overflow: auto;
 }
@@ -17,7 +16,9 @@ html, body{
     flex-direction: column;
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
+    background: url(Imagens/Kimetsu.jpg);
     background-size: 100%;
+    background-attachment: fixed;
 }
 
 #logo{
@@ -44,7 +45,6 @@ header{
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0.877);
     font-family: "Roboto", sans-serif;
     letter-spacing: 1.1px;
@@ -53,7 +53,13 @@ header{
     text-transform: uppercase;
 }
 
-
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 .paragrafos{
     margin: 50px;
@@ -184,27 +190,20 @@ p{
 #prin{
     font-size: 30px;
     height: 40px;
-    margin: 30px;
+    margin: 50px;
     border-bottom: 3px solid aqua;  
     border-radius: 10%;
 }
 
 .title{
     font-size: 25px;
+    color: rgb(179, 56, 56);
 }
 
 main ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-nav{
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    display: grid;
-    color: aliceblue;
 }
 
 nav a{
@@ -234,8 +233,6 @@ li{
 }
 
 footer{
-
-    height: 40px;
     background-color: rgba(0, 0, 0, 0.877);
     display: flex;
     color: aliceblue;
@@ -243,3 +240,6 @@ footer{
     align-items: center;
 }
 
+#menuToggle{
+    display: none;
+}

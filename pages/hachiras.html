@@ -1,111 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kimetsu no Yaiba - Hachiras</title>
-        <link rel="stylesheet" type="text/css" href="../style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimetsu no Yaiba - Hachiras</title>
+    <link rel="stylesheet" type="text/css" href="../styles/hamburguer.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/media_1008.css">
+    <link rel="stylesheet" type="text/css" href="../styles/media_641.css">
+</head>
 
-    <body background="../Imagens/Kimetsu.jpg">
+<body background="../Imagens/Kimetsu.jpg">
 
-        <header>
+    <header>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">
-                            <div class="teste">
-                                <p>Início</p>
-                                <div style="height: 2px; width: 100%;"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="ranking.html">
-                            <div class="teste">
-                                <p>Ranking</p>
-                                <div style="height: 2px; width: 100%;"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="anime.html">
-                            <div class="teste">
-                                <p>Lista de personagens</p>
-                                <div style="height: 2px; width: 100%;"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="hachiras.html">
-                            <div class="teste">
-                                <p style="background-color: rgba(177, 176, 176, 0.526); border-radius: 10px;">Hachiras</p>
-                                <div style="height: 2px; width: 100%;"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="luas.html">
-                            <div class="teste">
-                                <p>Luas Superiores</p>
-                                <div style="height: 2px; width: 100%;"></div>
-                            </div>
-                        </a>
-                    </li>
+        <nav>
+            <div id="menuToggle">
+                <!--
+                        A fake / hidden checkbox is used as click reciever,
+                        so you can use the :checked selector on it.
+                        -->
+                <input type="checkbox" />
+
+                <!--
+                        Some spans to act as a hamburger.
+                        
+                        They are acting like a real hamburger,
+                        not that McDonalds stuff.
+                        -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                        Too bad the menu has to be inside of the button
+                        but hey, it's pure CSS magic.
+                        -->
+                <ul id="menu">
+                    <article id="blur"></article>
+                    <a href="../index.html">
+                        <li>INICIO</li>
+                    </a>
+                    <a href="anime.html">
+                        <li>ANIME</li>
+                    </a>
+                    <a href="hachiras.html">
+                        <li>HACHIRAS</li>
+                    </a>
+                    <a href="luas.html">
+                        <li>LUAS</li>
+                    </a>
+                    <a href="ranking.html">
+                        <li>RANKING</li>
+                    </a>
                 </ul>
-            </nav>
-
-        </header>
-
-        <main>
-            <section class="imagens">
-                <figure>
-                    <img id="gyomei" class="hachira_img" src="https://www.nautiljon.com/images/perso/00/04/himejima_gyomei_18540.webp" alt="">
-                    <figcaption>
-                        <p>Gyomei Himejima</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img id="sanemi" class="hachira_img" src="https://wisecineman.ru/kartinki/heroes/kimetsu-no-yaiba/1005-1.webp" alt="">
-                    <figcaption>
-                        <p>Sanemi Shinazugawa</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img id="giyu" class="hachira_img" src="https://thicc.mywaifulist.moe/waifus/20851/14209b7387bea2ff5de345dce5dbd931b6a7bce92f3c9180d9bab24fae4be1b3_thumb.jpeg" alt="">
-                    <figcaption>
-                        <p>Giyu Tomioka</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img id="muichiro" class="hachira_img" src="https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2023/04/Muichiro-Tokito-Hashira-Demon-Slayer-Kimetsu-no-Yaiba.webp?resize=576%2C1024" alt="">
-                    <figcaption>
-                        <p>Muichiro Tokito</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img id="obanai" class="hachira_img" src="https://criticalhits.com.br/wp-content/uploads/2022/08/serpent-hashira-feature-910x455.jpg" alt="">
-                    <figcaption>
-                        <p>Obanai Iguro</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img id="mitsuri" class="hachira_img" src="https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2023/04/Mitsuri-Kanroji-_2_.webp?resize=1024%2C717" alt="">
-                    <figcaption>
-                        <p>Mitsuri Kanroji</p>
-                    </figcaption>
-                </figure>
-            </section>
-        </main>
-
-        <footer>
-            <p>Feito por: Igor Cardoso e Cauã Rufino</p>
-        </footer>
 
 
-    </body>
+            </div>
+            <ul id="nav_buttons">
+                <li>
+                    <a href="../index.html">
+                        <div class="teste">
+                            <p style="background-color: rgba(177, 176, 176, 0.526); border-radius: 10px;">Início</p>
+                            <div style="height: 2px; width: 100%;"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="ranking.html">
+                        <div class="teste">
+                            <p>Ranking</p>
+                            <div style="height: 2px; width: 100%;"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="anime.html">
+                        <div class="teste">
+                            <p>Personagens</p>
+                            <div style="height: 2px; width: 100%;"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="hachiras.html">
+                        <div class="teste">
+                            <p>Hachiras</p>
+                            <div style="height: 2px; width: 100%;"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="luas.html">
+                        <div class="teste">
+                            <p>Luas</p>
+                            <div style="height: 2px; width: 100%;"></div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="imagens">
+            <figure>
+                <img id="gyomei" class="hachira_img"
+                    src="https://www.nautiljon.com/images/perso/00/04/himejima_gyomei_18540.webp" alt="">
+                <figcaption>
+                    <p>Gyomei Himejima</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img id="sanemi" class="hachira_img"
+                    src="https://wisecineman.ru/kartinki/heroes/kimetsu-no-yaiba/1005-1.webp" alt="">
+                <figcaption>
+                    <p>Sanemi Shinazugawa</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img id="giyu" class="hachira_img"
+                    src="https://thicc.mywaifulist.moe/waifus/20851/14209b7387bea2ff5de345dce5dbd931b6a7bce92f3c9180d9bab24fae4be1b3_thumb.jpeg"
+                    alt="">
+                <figcaption>
+                    <p>Giyu Tomioka</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img id="muichiro" class="hachira_img"
+                    src="https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2023/04/Muichiro-Tokito-Hashira-Demon-Slayer-Kimetsu-no-Yaiba.webp?resize=576%2C1024"
+                    alt="">
+                <figcaption>
+                    <p>Muichiro Tokito</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img id="obanai" class="hachira_img"
+                    src="https://criticalhits.com.br/wp-content/uploads/2022/08/serpent-hashira-feature-910x455.jpg"
+                    alt="">
+                <figcaption>
+                    <p>Obanai Iguro</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img id="mitsuri" class="hachira_img"
+                    src="https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2023/04/Mitsuri-Kanroji-_2_.webp?resize=1024%2C717"
+                    alt="">
+                <figcaption>
+                    <p>Mitsuri Kanroji</p>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito por: Igor Cardoso e Cauã Rufino</p>
+    </footer>
+
+
+</body>
 
 </html>
