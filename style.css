@@ -105,12 +105,13 @@ tr, th, td{
 
 img{
     object-fit: cover;
-    height: 25vh;
-    width: 15vw;
+    height:300px;
+    width: 250px;
     border-radius: 27%;
-    min-height: 250px;
-    min-width: 200px;
-
+    min-height: 150px;
+    min-width: 100px;
+    max-width: 250px;
+    max-height: 600px;
 }
 
 figure{
@@ -150,7 +151,7 @@ p{
 
 
 .lista{
-    width: 30%;
+    width: 50%;
     margin: 50px;
     flex-wrap: wrap;
     display: flex;
@@ -174,7 +175,6 @@ p{
 
 #prin{
     font-size: 30px;
-    height: 40px;
     margin: 50px;
     border-bottom: 3px solid aqua;  
     border-radius: 10%;
@@ -231,6 +231,8 @@ footer img{
     width: 25px;
     min-height: auto;
     min-width: auto;
+    position: absolute;
+    margin: 0 -95% 0 0;
 }
 
 #menuToggle{
